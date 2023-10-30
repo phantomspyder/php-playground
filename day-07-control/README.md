@@ -7,3 +7,13 @@ if (1 < 2) {
     echo "This message will be printed";
 }
 ```
+## If/Else ##
+* Else executes a statment if the expression for the `if` statmement evaluates to `false`.
+```php
+<?php
+if (2 < 1) {
+    echo "This message will be not be printed";
+} else {
+    echo "This message for else will be printed";
+}
+```
