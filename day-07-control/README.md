@@ -17,3 +17,13 @@ if (2 < 1) {
     echo "This message for else will be printed";
 }
 ```
+## elseif / else if ##
+* `elseif` or `else if` executes a statment if the expression for the `if` statmement evaluates to `false` and expression for `elseif / else if` evaluates to `true`
+```php
+<?php
+if (2 < 1) {
+    echo "This message will be not be printed";
+} elseif (2 > 1) {
+    echo "This message for elseif will be printed";
+}
+```
