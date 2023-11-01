@@ -27,3 +27,13 @@ if (2 < 1) {
     echo "This message for elseif will be printed";
 }
 ```
+## while
+The while loops repeatedly executes statements given to it while the provided expresssion evaluates to `true`.
+```php
+<?php
+$i = 0;
+while ( $i < 10 ) {
+    $i++;
+    echo "$i";
+}
+```
