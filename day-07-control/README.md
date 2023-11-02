@@ -37,3 +37,16 @@ while ( $i < 10 ) {
     echo "$i";
 }
 ```
+## do-while
+The `do-while` loop is very similar to the `while` loop except for
+1. The expression to execute the statements is evaluated towards the end of the iteration.
+2. It is guaranteed to run at least once.
+```php
+<?php
+$i = 0;
+do {
+    $i++;
+    echo "$i";
+}
+while ( $i < 10 );
+```
