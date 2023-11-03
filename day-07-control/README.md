@@ -50,3 +50,13 @@ do {
 }
 while ( $i < 10 );
 ```
+## for
+The `for` loop takes the following form
+```php
+for (expr1; expr2; expr3)
+    statement
+```
+* `expr1` is evaluated and executed once at the start of the loop.
+* `expr2` is evaluated at the start of each iteration and the loop continues to execute the statements if it evaluates to `true`
+* `expr3` is evaluated and executed at the end of each iteration.
+* Each expression can be empty or contain multiple expression separated by comma.
