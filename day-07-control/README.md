@@ -60,3 +60,8 @@ for (expr1; expr2; expr3)
 * `expr2` is evaluated at the start of each iteration and the loop continues to execute the statements if it evaluates to `true`
 * `expr3` is evaluated and executed at the end of each iteration.
 * Each expression can be empty or contain multiple expression separated by comma.
+## foreach
+TBD
+## break
+* Ends the execution of the current `for`, `foreach`, `while`, `do-while` or `switch`structure.
+* Accpets an optional numeric argument which tells how many nested structures are to be broken out (the default is 1).
