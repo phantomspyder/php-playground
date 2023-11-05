@@ -61,7 +61,11 @@ for (expr1; expr2; expr3)
 * `expr3` is evaluated and executed at the end of each iteration.
 * Each expression can be empty or contain multiple expression separated by comma.
 ## foreach
-TBD
+TODO
 ## break
 * Ends the execution of the current `for`, `foreach`, `while`, `do-while` or `switch`structure.
 * Accpets an optional numeric argument which tells how many nested structures are to be broken out (the default is 1).
+## continue
+* Skips the execution of the current `for`, `foreach`, `while`, `do-while` or `switch`loops.
+* `switch` is considered a looping structure for `continue`.
+* Accpets an optional numeric argument which tells how many nested enclosing loops are to be skipped (the default is 1).
