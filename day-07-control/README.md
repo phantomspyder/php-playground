@@ -69,3 +69,28 @@ TODO
 * Skips the execution of the current `for`, `foreach`, `while`, `do-while` or `switch`loops.
 * `switch` is considered a looping structure for `continue`.
 * Accpets an optional numeric argument which tells how many nested enclosing loops are to be skipped (the default is 1).
+## switch
+```php
+<?php
+switch ($i) {
+    case 0:
+        echo "i equals 0";
+        break;
+    case 1:
+        echo "i equals 1";
+        break;
+    case 2:
+        echo "i equals 2";
+        break;
+}
+
+```
+* Like a series of `if` statements on the same expression.
+* `continue` is applicable in a `switch` statement and acts similar to `break`. 
+* `switch/case` does loose comparsion.
+* You need to use `break` to tell php to stop executing the code after running the statmenets for the matching `case`.
+* The `switch` statment's condition is evaluated only once and thus it is better than nested `if/else` for complicated conditions or code running in a loop.
+* Use `default` to execute code if no matching `case` is found.
+* You can use `;` instead of `:` after a `case`.
+* For complex comparisons, you can use `switch(true)`
+
