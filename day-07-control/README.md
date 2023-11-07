@@ -93,4 +93,23 @@ switch ($i) {
 * Use `default` to execute code if no matching `case` is found.
 * You can use `;` instead of `:` after a `case`.
 * For complex comparisons, you can use `switch(true)`
+## match
+* Branches evaluation based on an identity check of a value.
+* match expression arms may contain multiple expressions seperated by a comma.
+* Match expression can be used to handle non identity cases by using `match(true)`
+```php
+<?php
+$bgcolor = 'green';
+
+$fgcolor = match($bgcolor) {
+    'green','blue' => 'yellow',
+    'white' => 'black',
+    'black' => 'white',
+};
+```
+* A match expression is similar to switch except for
+1. A match arm compares values strictly (===) instead of loosely as in `switch`
+2. A match expression returns a value.
+3. match arms do not fall-through to the later cases like in `switch`.
+4. A match expression must be exhaustive (meaning it should cover all the possible values or `default`)
 
