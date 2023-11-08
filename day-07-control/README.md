@@ -112,4 +112,26 @@ $fgcolor = match($bgcolor) {
 2. A match expression returns a value.
 3. match arms do not fall-through to the later cases like in `switch`.
 4. A match expression must be exhaustive (meaning it should cover all the possible values or `default`)
+## declare
+* Is used to set execution directives for a block of code.
+```php
+<?php
+declare (directive)
+    statement
+```
+* Only 3 directives are recognized as of now.
+1. Ticks Directive
 
+> The tick is an event that occurs for every `N` low-level tickable statements executed by the parser. Also see `register_tick_function`.
+
+2. Encoding
+
+> A script's encoding can be specified on per-script basis using the `encoding` directive.
+
+3. Strict Types
+
+> In the strict type mode, only a value corresponding to the type declaration will be accepted otherwise a `TypeError` will be thrown. The only exception to this rule is that an `int` value will pass a `float` type declaration.
+
+> If a file without strict typing enabled makes a call to a function that was defined in a file with strict typing, the caller's preference (coercive typing) will be respected, and the value will be coerced. 
+
+* Variables and constants cannot be used for the directive values as the directives are handled as the file is being compiled.
