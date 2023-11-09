@@ -135,3 +135,9 @@ declare (directive)
 > If a file without strict typing enabled makes a call to a function that was defined in a file with strict typing, the caller's preference (coercive typing) will be respected, and the value will be coerced. 
 
 * Variables and constants cannot be used for the directive values as the directives are handled as the file is being compiled.
+## return
+* Returns the program control to the calling module.
+* If called 
+    * within a function, the `return` statement immediately ends execution of the current function and returns its argument as the value of the function call.
+    * from global scope, the execution of the current script is ended. If the current script was included or required, then the cotrol is passed back to the calling file. If the current script was included, then the value given to return will be returned as the value of the `include` call.
+    * from within the main script, then script execution ends. If the current script file was named by the `auto_prepend_file` or `auto_append_file` configuration options in `php.ini`, then that script file's execution is ended.
