@@ -141,3 +141,9 @@ declare (directive)
     * within a function, the `return` statement immediately ends execution of the current function and returns its argument as the value of the function call.
     * from global scope, the execution of the current script is ended. If the current script was included or required, then the cotrol is passed back to the calling file. If the current script was included, then the value given to return will be returned as the value of the `include` call.
     * from within the main script, then script execution ends. If the current script file was named by the `auto_prepend_file` or `auto_append_file` configuration options in `php.ini`, then that script file's execution is ended.
+
+    ## include
+    TBD
+
+    ## include_once
+    * The behaviour of `include_once` is similar to the `include` statment except that if the file has been included once, it will not be included again. The return value will be `true` in that case.
