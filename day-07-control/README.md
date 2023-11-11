@@ -147,3 +147,9 @@ declare (directive)
 
     ## include_once
     * The behaviour of `include_once` is similar to the `include` statment except that if the file has been included once, it will not be included again. The return value will be `true` in that case.
+
+    ## require
+    * Is identical to `include` except that it will produce a fatal `E_COMPILE_ERROR`.
+    
+    ## require_once
+    * Is identical to `require` except that PHP will check if the file has already been included, and so, not include it again.
