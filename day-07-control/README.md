@@ -153,3 +153,16 @@ declare (directive)
     
     ## require_once
     * Is identical to `require` except that PHP will check if the file has already been included, and so, not include it again.
+
+    ## goto
+    * Can be used to jump to a section in program marked by a label.
+    * The target label must be in the same file and context i.e. you cannot jump out of/into a function or method.
+    * You cannot jump into any loop or `switch` structure. You may jump out  of these though.
+    ```php
+    <?php
+    goto a;
+    echo 'Goodbye World!';
+
+    a:
+    echo 'Hello World!';
+    ```
