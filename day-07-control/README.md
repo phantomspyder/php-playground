@@ -61,7 +61,17 @@ for (expr1; expr2; expr3)
 * `expr3` is evaluated and executed at the end of each iteration.
 * Each expression can be empty or contain multiple expression separated by comma.
 ## foreach
-TODO
+* Provides an easy to iterate over arrays and objects.
+* By default, the array elements are not modified but you can use `&` with value to modify it.
+* You should reset `$value` after the `foreach` if you plan to re-use it as it would still point to the last item of an array.
+```php
+<?php
+foreach (iterable_expression as $value)
+    statement
+foreach (iterable_expression as $key => $value)
+    statement
+```
+
 ## break
 * Ends the execution of the current `for`, `foreach`, `while`, `do-while` or `switch`structure.
 * Accpets an optional numeric argument which tells how many nested structures are to be broken out (the default is 1).
@@ -143,7 +153,12 @@ declare (directive)
     * from within the main script, then script execution ends. If the current script file was named by the `auto_prepend_file` or `auto_append_file` configuration options in `php.ini`, then that script file's execution is ended.
 
     ## include
-    TBD
+    * Includes and evaluates the specified file in the following order
+    1. Look in the specified path.
+    2. If 1 is not provided, look into `include_path`.
+    3. If file not found in 2, check the calling script's directory and then the current working directory.
+    4. If the files is still not found, emit `E_WARNING`.
+    5. All the code contained by the included file is in variable scope after the line which makes the call to include. Classes and functions however, are in the global scope.
 
     ## include_once
     * The behaviour of `include_once` is similar to the `include` statment except that if the file has been included once, it will not be included again. The return value will be `true` in that case.
