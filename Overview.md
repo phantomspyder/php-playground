@@ -42,6 +42,8 @@ markmap:
     - goto
     - return
 ## Operators
+- Arithmetic Operators
+- Increment / Decrement Operators
 
 ## Exceptions
 ## Errors
