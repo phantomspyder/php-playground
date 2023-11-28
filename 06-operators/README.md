@@ -27,3 +27,36 @@ TODO: Add operator precedence table.
 | $a++ | Post-increment | Returns $a, then increments $a by one.|
 | --$a | Pre-decrement | Decrements $a by one, then returns $a.|
 | $a-- | Post-decrement | Returns $a, then decrements $a by one.|
+## Assignment Operator
+* The basic assignment operator is `=`.
+* This operator is used for `binary arithmetic`, array union and string operators.
+* Assignment Operator copies the value of the original variable to the one it is being assigned to. An exception to this rule is objects which are assigned by reference. Objects may be explicitly copied via the `clone` keyword.
+* Assignment by reference means both the variables point to the same data in the memory.
+
+```php
+<?php
+$a = 3;
+$b = &$a; // both $a and $b point to the same object
+```
+### Arithmetic Assignment Operators
+| Example | Equivalent | Operation |
+| --- | --- | --- |
+| $a += $b | $a = $a + $b | Addition |
+| $a -= $b | $a = $a - $b | Subtraction |
+| $a *= $b | $a = $a * $b | Multiplication |
+| $a /= $b | $a = $a / $b | Division|
+| $a %= $b | $a = $a % $b | Modulus |
+| $a **= $b | $a = $a ** $b | Exponentiation |
+### Bitwise Assignment Operators
+| Example | Equivalent | Operation |
+| --- | --- | --- |
+| $a &= $b | $a = $a & $b | Bitwise And |
+| $a ^= $b | $a = $a ^ $b | Bitwise Xor |
+| $a |= $b | $a = $a | $b | Bitwise Or |
+| $a <<= $b | $a = $a << $b | Left Shift |
+| $a >>= $b | $a = $a >> $b | Right Shift |
+### Other Assignment Operators
+| Example | Equivalent | Operation |
+| --- | --- | --- |
+| $a .= $b | $a = $a . $b | String Concantenation |
+| $a ??= $b | $a = $a ?? $b | Null Coalesce |
