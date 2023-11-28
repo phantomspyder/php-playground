@@ -44,6 +44,7 @@ markmap:
 ## Operators
 - Arithmetic Operators
 - Increment / Decrement Operators
+- Assignment Operators
 
 ## Exceptions
 ## Errors
