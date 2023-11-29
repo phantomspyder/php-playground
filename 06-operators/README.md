@@ -60,3 +60,12 @@ $b = &$a; // both $a and $b point to the same object
 | --- | --- | --- |
 | $a .= $b | $a = $a . $b | String Concantenation |
 | $a ??= $b | $a = $a ?? $b | Null Coalesce |
+## Bitwise Operators
+| Example | Name | Result |
+| --- | --- | --- |
+| $a & $b | And | Bits that are set in both $a and $b are set. |
+| $a \| $b | Or (Inclusive Or) | Bits that are set in either $a or $b are set. |
+| $a ^ $b | Xor (Exclusive Or) | Bits that are set in $a or $b but not both are set. |
+| ~$a | Not |  	Bits that are set in $a are not set, and vice versa.  |
+| $a << $b | Shift Left | Shift the bits of $a $b steps to the left (each step means "multiply by two") |
+| $a >> $b | Shift Right | Shift the bits of $a $b steps to the right (each step means "divide by two") |
