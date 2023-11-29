@@ -45,6 +45,7 @@ markmap:
 - Arithmetic Operators
 - Increment / Decrement Operators
 - Assignment Operators
+- Bitwise Operators
 
 ## Exceptions
 ## Errors
