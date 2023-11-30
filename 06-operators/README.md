@@ -69,3 +69,8 @@ $b = &$a; // both $a and $b point to the same object
 | ~$a | Not |  	Bits that are set in $a are not set, and vice versa.  |
 | $a << $b | Shift Left | Shift the bits of $a $b steps to the left (each step means "multiply by two") |
 | $a >> $b | Shift Right | Shift the bits of $a $b steps to the right (each step means "divide by two") |
+## Comparison Operators
+TODO
+## Error Control Operators
+*  PHP supports `@` operator which suppresses any diagnostic error by an expression when prepended to it.
+* If a custom error hander function is set with `set_error_handler()`, it will still be called.
