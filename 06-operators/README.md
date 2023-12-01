@@ -74,3 +74,6 @@ TODO
 ## Error Control Operators
 *  PHP supports `@` operator which suppresses any diagnostic error by an expression when prepended to it.
 * If a custom error hander function is set with `set_error_handler()`, it will still be called.
+## Execution Operators
+* PHP supports one execution operator. backticks ``
+* PHP will attempt to execute the contents of the backticks as a shell command and the output will be returned.
