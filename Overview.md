@@ -49,6 +49,6 @@ markmap:
 - Comparison Operators
 - Error Control Operators
 - Execution Operators
-
+- Logical Operators
 ## Exceptions
 ## Errors
