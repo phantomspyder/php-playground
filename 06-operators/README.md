@@ -84,4 +84,8 @@ TODO
 | $a or $b | Or | true if either $a or $b is true. |
 | $a xor $b | Xor | true if either $a or $b is true, but not both. |
 | $a && $b | And | true if both $a and $b are true. |
-| $a || $b | Or | true if either $a or $b is true. |
+| $a \|\| $b | Or | true if either $a or $b is true. |
+## String Operators
+* There are two string operators in PHP.
+* `.` is the concatenatio operator which returns the concatenation of its right and left arguments.
+* The second is the `.=` concantenation assignment operator which appends the argument on the right side to the argument on the left side.
