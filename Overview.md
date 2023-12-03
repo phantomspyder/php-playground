@@ -50,5 +50,6 @@ markmap:
 - Error Control Operators
 - Execution Operators
 - Logical Operators
+- String Operators
 ## Exceptions
 ## Errors
