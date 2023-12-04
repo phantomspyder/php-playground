@@ -89,3 +89,12 @@ TODO
 * There are two string operators in PHP.
 * `.` is the concatenatio operator which returns the concatenation of its right and left arguments.
 * The second is the `.=` concantenation assignment operator which appends the argument on the right side to the argument on the left side.
+## Array Operators
+| Example | Name | Result |
+| --- | --- | --- |
+| $a + $b | Union | Union of $a and $b. |
+| $a == $b | Equality | true if $a and $b have the same key/value pairs. |
+| $a === $b | Identity |true if $a and $b have the same key/value pairs in the same order and of the same types. |
+| $a != $b | Inequality | true if $a is not equal to $b. |
+| $a <> $b | Inequality | true if $a is not equal to $b. |
+| $a !== $b | Non-Identity | true if $a is not identical to $b. |
