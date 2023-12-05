@@ -98,3 +98,7 @@ TODO
 | $a != $b | Inequality | true if $a is not equal to $b. |
 | $a <> $b | Inequality | true if $a is not equal to $b. |
 | $a !== $b | Non-Identity | true if $a is not identical to $b. |
+## Type Operators
+* `instanceof` is used to determine whether a PHP variable is an instantiated object of a certain class
+* a parent class
+* a class that implments an interface

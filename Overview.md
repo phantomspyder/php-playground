@@ -52,5 +52,6 @@ markmap:
 - Logical Operators
 - String Operators
 - Array Operators
+- Type Operators
 ## Exceptions
 ## Errors
