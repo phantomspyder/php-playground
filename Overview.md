@@ -54,6 +54,7 @@ markmap:
 - Array Operators
 - Type Operators
 ## Enums
+- Pure Enum
 ## Exceptions
 ## Errors
 
