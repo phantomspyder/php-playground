@@ -55,6 +55,7 @@ markmap:
 - Type Operators
 ## Enums
 - Pure Enum
+- Backed Enum
 ## Exceptions
 ## Errors
 
