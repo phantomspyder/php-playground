@@ -25,3 +25,4 @@ enum Color: string
 * Backed enum may be backed by types of `int` or `string` but no union.
 * If enum is marked as having a scalar equivalent then all cases mush have a unique scalar equivalent defined.
 * Backed Cases have an additional read-only property, `value` which is the value specified in the definition.
+* Backed enums implement an internal `BackedEnum` interface, which exposes two additional methods. `from` and `tryFrom` which will take a scalar value and return a corresponding case.
