@@ -56,6 +56,7 @@ markmap:
 ## Enums
 - Pure Enum
 - Backed Enum
+- Supports Defining Methods
 ## Exceptions
 ## Errors
 
