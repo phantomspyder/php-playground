@@ -26,8 +26,31 @@ enum Color: string
 * If enum is marked as having a scalar equivalent then all cases mush have a unique scalar equivalent defined.
 * Backed Cases have an additional read-only property, `value` which is the value specified in the definition.
 * Backed enums implement an internal `BackedEnum` interface, which exposes two additional methods. `from` and `tryFrom` which will take a scalar value and return a corresponding case.
-## Methods
+## Methods ##
 * Any enum may contain methods and may implement interfaces.
 * If enum implements an interface, its cases can be used for type checking that interface.
 * Inside a method, `$this` refers to the case instance.
 * Methods can be `public`, `private` or `protected` although in practice `private` and `protected` are equivalent because inheritance is not allowed.
+### Static Methods ###
+* Enums support static methods primarily for alternative constructors.
+```php
+<?php
+enum Color
+{
+    case Red;
+    case Green;
+    case Blue;
+
+    public static function fromIndex(int $idx): static
+    {
+        if ($idx == 0) {
+            return static::Red;
+        }
+        else if ($idx == 1) {
+            return static::Green;
+        }
+        return static::Blue;
+    }
+}
+
+```
