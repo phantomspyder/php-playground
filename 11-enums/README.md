@@ -54,3 +54,17 @@ enum Color
 }
 
 ```
+## Enum Constants
+* Enums may include constants which can refer to an enum case.
+
+```php
+<?php
+enum Size
+{
+    case Blue;
+
+    public const SkyBlue = self::Blue;
+}
+```
+## Traits
+* Enumeration may leverage traits. However, traits used in an enum cannot contain properties but only methods and static methods.
