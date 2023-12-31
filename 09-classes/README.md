@@ -11,4 +11,10 @@
 
 ## Class Constants ##
 * Class constants can be redefined by a child class unless it is declared `final`
-*
+
+## Autoloading ##
+* PHP allow to register any number of autoloaders to automatically load classes. interfaces, enums and traits without having to use `include` and `require`.
+* `spl_autoload_register` is the function to register an autoloader.
+
+## Visibility ##
+* `public`, `protected`, `private`
